@@ -1,0 +1,59 @@
+.product {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.add-to-favorite {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.add-to-favorite:hover {
+    color: orange;
+}
+
+.add-to-favorite.active {
+    background-color: orange;
+    color: white;
+    border-color: orange;
+}
+
+.image-section {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.product-image {
+    transition: transform .6s ease;
+}
+
+.image-section:hover .product-image {
+    transform: scale(1.2);
+}
+
+.product-info {
+    height: calc(100% - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 15px;
+    padding: 10px;
+}
+
+.product-price {
+    color: darkorange;
+}

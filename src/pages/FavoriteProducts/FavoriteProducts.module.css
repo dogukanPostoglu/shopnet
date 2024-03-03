@@ -1,0 +1,37 @@
+.favorite-products {
+    display: grid;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+/* For screens wider than 1200px */
+@media screen and (min-width: 1200px) {
+    .favorite-products {
+        grid-template-columns: repeat(4, 1fr);
+        /* Display 4 items per row */
+    }
+}
+
+/* For screens between 992px and 1199px */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .favorite-products {
+        grid-template-columns: repeat(3, 1fr);
+        /* Display 3 items per row */
+    }
+}
+
+/* For screens between 600px and 991px */
+@media screen and (min-width: 600px) and (max-width: 991px) {
+    .favorite-products {
+        grid-template-columns: repeat(2, 1fr);
+        /* Display 2 items per row */
+    }
+}
+
+/* For screens below 600px (Mobile) */
+@media screen and (max-width: 599px) {
+    .favorite-products {
+        grid-template-columns: repeat(1, 1fr);
+        /* Display 1 item per row */
+    }
+}

@@ -1,0 +1,18 @@
+.error-page {
+    text-align: center;
+}
+
+.error-page h1 {
+    padding-top: 50px;
+}
+
+.error-page a {
+    display: inline-block;
+    margin-top: 30px;
+    border-bottom: 3px solid orange;
+    padding-bottom: 10px;
+}
+
+.error-page a:hover {
+    color: darkorange;
+}
